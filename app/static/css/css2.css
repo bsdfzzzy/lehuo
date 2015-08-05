@@ -1,0 +1,191 @@
+button{
+    outline: none;
+}
+.input{
+    outline: none;
+}
+.first-top{
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    background: rgba(0,0,0,0.1);
+    z-index: 1000;
+    padding-left: 230px;
+}
+.middle{
+    height: auto;
+    width: 100%;
+    background-color: #666;
+    padding-left: 190px;
+    padding-top: 5px;
+    display: block;
+    overflow: auto;
+}
+.second-display{
+    width: 500px;
+    height: 210px;
+    background-color: #fff;
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-bottom: 15px;
+    float: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 5px;
+    display: block;
+}
+.second-display img{
+    float: left;
+}
+.second-display-1{
+    float: left;
+    padding-left: 15px;
+    width: 260px;
+    height: 110px;
+}
+.second-display-1 b{
+    font-size: 18px;
+}
+.second-label{
+    font-size: 6px;
+    color: #bbb;
+}
+.second-describe{
+    font-size: 8px;
+}
+.second-address{
+    padding-left: 15px;
+    font-size: 6px;
+    color: #077;
+    float: left;
+    height: 40px;
+}
+.second-join{
+    float: right;
+    width: 70px;
+    font-size:12px; 
+    height: 25px;
+    border-radius: 15px;
+    background: rgba(0,0,0,0);
+    border: 1px solid #0bd;
+    color: #0bd;
+}
+.second-join:hover{
+    background-color: #0da;
+    color: #fff;
+}
+.footer{
+    height: 250px;
+    width: 100%;
+    background-color: #222;
+    padding-top: 20px;
+    padding-left: 220px;
+    padding-right: 200px;
+}
+.second-about{
+    line-height: 17px;
+    color: #fff;
+    width: 130px;
+    font-size: 16px;
+    float: left;
+}
+.second-connect{
+    float: left;
+    margin-left: 30px;
+    font-size: 16px;
+    color: #fff;
+    width: 200px;
+    height：100%；
+}
+.second-other{
+    float: right;
+    color: #fff;
+    font-size: 16px;
+}
+.first1{
+    margin-top:250px;
+    letter-spacing: 0px;
+    font-size: 28px;
+    font-family: 微软雅黑;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.first2{
+    font-family: 微软雅黑;
+    font-size: 10px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.first-button{
+    width: 120px;
+    height: 32px;
+    border-radius: 19px;
+    border: 1px solid #fff;
+    font-size: 微软雅黑;
+    font-size: 16px;
+    background: none;
+    margin-right: 25px;
+}
+.first-button:hover{
+    background-color: #71cd1d;
+    border: 0;
+}
+.first-search{
+    width: 250px;
+    background: none;
+    margin-top: 18px;
+    float: left;
+}
+.search{
+    width: 250px; 
+    height: 35px;
+    background: url(../img/search.png);
+    border: 1px solid #555;
+}
+.search:focus{
+    background: rgba(255,255,255,0.3);
+}
+.HOME{
+    margin-right: 30px;
+    color: #fff;
+}
+.CENTER{
+    margin-right: 30px;
+    color:#fff;
+}
+#three-nav{
+    float: right;
+    line-height: 70px;
+    font-size: 15px;
+    margin-right: 150px;
+}
+.first-nav-img{
+    margin-left: 10px;
+    vertical-align: baseline;
+}
+.second-banner img{
+    width: 100%;
+}
+.abcd{
+    float: left;
+    width: 300px;
+    height: 20px;
+}
+.abcd img{
+    position: relative;
+    top:3px;
+    width: 15px;
+}
+.tails{
+    font-size:12px;
+    color:#888;
+    font-family:黑体;
+    font-weight:bold;
+}
+.number-of{
+    width: auto;
+    font-family: 黑体;
+    font-weight: 900;
+    margin-left: 3px;
+    color: #888;
+}

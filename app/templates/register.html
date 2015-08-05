@@ -1,0 +1,75 @@
+<!doctype html>
+<html class="fsvs demo" lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="static/css/style.css">
+        <script src="static/js/jquery.min.js"></script>
+        <script src="static/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="static/css/css.css">
+    </head>
+    <body>
+        <div class="first-top2">
+            <div class="first-search">
+                <input type="search" class="search" name="search" placeholder="">
+            </div>
+            <div id="three-nav">
+                <span class="HOME">HOME</span>
+                <span class="CENTER">CENTER</span>
+                <span class="CENTER">CONTACT</span>
+                <img src="static/img/nav.png" width="22px" class="first-nav-img">
+            </div>
+        </div>
+        <div class="leho" style="margin-top:50px;">
+            <p class="leho-label">LEHO</p>
+            <p class="leho-love">说你所爱</p>
+            <p class="leho-say">Say your love</p>
+            <div class="loginbanner">
+                <div style="height:135px;border:2px solid #ddd;border-radius:20px;">
+                    <form method="post" action="/member/reg/register">
+                        <input type="email" name="user-email" class="leho-email" style="border:0;border-radius:20px 20px 0px 0px;background:rgba(200,200,200,0.1);" placeholder="电子邮箱" /><br>
+                        <input type="password" name="user-password" class="password" style="height:45px;border-radius:0;border:0;background:rgba(200,200,200,0.1);" placeholder="密码" />
+                        <input type="text" name="user-password" class="password" style="height:45px;border-radius:0px 0px 20px 20px;border:0;background:rgba(200,200,200,0.1);" placeholder="用户名" />
+                        <input type="submit" name="denglu" class="denglu" value="注 册">
+                    </form>
+                </div>
+                <div style="font-size:14px;margin-top:15px;color:#fff;">发现LEHO</div>
+            </div>
+        </div>
+        <div class="app-picture">
+            <a><img src="static/img/app.png"></a>
+            <a><img src="static/img/goole.png"></a>
+        </div>
+        <div class="footer2">LEHO是什么</div>
+        <script>
+            $(function(){
+              $.ajax({
+                contentType: "application/json",
+                type: "GET",
+                url: "member/reg/register",
+                dataType: "json",
+                success: function(data){
+                  if(data != null){
+                    if(register_success == true){
+                      alert("注册成功");
+                      location.href("/login");
+                    }
+                    else {
+                      if (is_login == true) {
+                        alert("您已登录");
+                      }
+                      else if (email_is_valid == False) {
+                        alert("邮箱已注册");
+                      }
+                      else if (username_is_valid == False) {
+                        alert("用户名已存在");
+                      }
+                    }
+                  }
+                  else{alert("服务器繁忙，请稍后再试");}
+                }
+              });
+            });
+        </script>
+    </body>
+</html>

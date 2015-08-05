@@ -1,0 +1,186 @@
+body{
+    font-family: 微软雅黑;
+}
+input{
+    outline: none;
+}
+button{
+    outline: none;
+}
+.first-top{
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    background: rgba(0,0,0,0.1);
+    z-index: 1000;
+    padding-left: 230px;
+}
+.first-top2{
+    height: 70px;
+    width: 100%;
+    background: rgba(0,0,0,0.1);
+    z-index: 1000;
+    padding-left: 230px;
+}
+.middle{
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+.footer{
+    bottom: 0;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.1;
+    z-index: 100;
+}
+.first1{
+    margin-top:250px;
+    letter-spacing: 0px;
+    font-size: 28px;
+    font-family: 微软雅黑;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.first2{
+    font-family: 微软雅黑;
+    font-size: 10px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.first-button{
+    width: 120px;
+    height: 32px;
+    border-radius: 19px;
+    border: 1px solid #fff;
+    font-family: 微软雅黑;
+    font-size: 16px;
+    background: none;
+    margin-right: 25px;
+}
+.first-button:hover{
+    background-color: #71cd1d;
+    border: 0;
+}
+.first-search{
+    width: 250px;
+    background: none;
+    margin-top: 18px;
+    float: left;
+}
+.search{
+    width: 250px; 
+    background: url(../img/search.png);
+    border: 1px solid #555;
+}
+.search:focus{
+    background: rgba(255,255,255,0.3);
+}
+.HOME{
+    margin-right: 30px;
+    color: #fff;
+}
+.CENTER{
+    margin-right: 30px;
+    color:#fff;
+}
+#three-nav{
+    float: right;
+    line-height: 70px;
+    font-size: 15px;
+    margin-right: 150px;
+}
+.first-nav-img{
+    margin-left: 10px;
+    vertical-align: baseline;
+}
+.first-2{
+    font-family: 微软雅黑;
+    font-size: 35px;
+    text-align: left;
+    margin-left: 130px;
+}
+.playContainer { margin-left: 110px;margin-top: 5px; position: relative; float: left; background: rgba(0, 0, 0, 0); padding: 0px; }  
+.playContainer li { position: relative; float: left; border: 20px solid #fff; color: #fff; height: 0; width:0; -webkit-border-radius: 100%; -moz-border-radius: 100%; -o-border-radius: 100%; border-radius: 100%; margin: 0 20px; }  
+.playContainer a { border-style: solid; text-indent: -9999px; position: absolute; top: -8px; left: -3px;  }  
+.playBtn a { border-color: transparent transparent transparent #bcb; border-width: 8px 0 8px 12px;  width: 0; height: 0; } 
+.playContainer li:hover{
+    border: 20px solid #71cd1d; color: #71cd1d;cursor: pointer;
+}
+.first-play{
+    float: left;
+    font-family: 黑体;
+    font-size: 17px;
+    margin-top: 12px;
+}
+.leho{
+    width: %100;
+    margin: 110px auto;
+    text-align: center;
+    line-height: 0px;
+    position: relative;
+}
+.leho-label{
+    line-height: 60px;
+    font-family: fantasy;
+    font-size: 70px;
+    letter-spacing: 3px;
+    color: #ddd;
+}
+.leho-love{
+    line-height: 15px;
+    font-size: 18px;
+    font-family: 黑体;
+    color: #ddd;
+}
+.leho-say{
+    font-size: 10px;
+    color: #ddd;
+}
+.loginbanner{
+    width: 100px;
+    width: 240px;;
+    height: 90px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin: auto;
+    font-size: 20px;
+}
+.leho-email{
+   height: 45px;
+}
+.denglu{
+    margin-top: 5px;
+    width: 240px;
+    height: 37px;
+    border-radius: 15px;
+    background-color: #00aadd;
+    border: 0;
+    font-size: 18px;
+    color: #fff;
+}
+.denglu:hover{
+    cursor: pointer;
+}
+.forget:hover{
+    cursor: pointer;
+}
+.footer2{
+    bottom: 0;
+    position: fixed;
+    height: 35px;
+    width: 100%;
+    background-color: #08d;
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    font-family: 微软雅黑;
+}
+.app-picture{
+    text-align: center;
+    margin: 300px
+}

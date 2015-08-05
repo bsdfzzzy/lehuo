@@ -1,0 +1,115 @@
+<!doctype html>
+<html class="fsvs demo" lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="/static/css/style.css">
+        <script src="/static/js/jquery.min.js"></script>
+        <script src="/static/js/jquery-migrate-1.2.1.min.js"></script>
+        <script src="/static/js/jquery.swipe-events.js"></script>
+        <script src="/static/js/prismjs.js"></script>
+        <script src="/static/js/fsvs.js"></script>
+        <script src="/static/js/main.js"></script>
+        <link rel="stylesheet" href="/static/css/css.css">
+        <link rel="stylesheet" href="/static/css/id.css">
+    </head>
+    <body>
+        <div class="first-top">
+            <div class="first-search">
+                <input type="search" class="search" name="search" placeholder="">
+            </div>
+            <div id="head-icon"><img></div><div id="user-name">sss</div>
+            <div id="three-nav">
+                <span class="HOME">HOME</span>
+                <span class="CENTER">CENTER</span>
+                <span class="CENTER">CONTACT</span>
+                <img src="static/img/cj.png" id="publish">
+                <img src="static/img/nav.png" width="22px" class="first-nav-img">
+            </div>
+        </div>
+        <div id="fsvs-body">
+            <div class="slide">
+                <h1 class="first1">A road of a thousand miles begins with one step</h1>
+                <p class="first2" style="font-size:19px;font-weight:200;">Life is movement.Evergreen life.Endless sports</p>
+                <a href="/reg"><button class="first-button" id="sign-up" value="SIGN UP">SIGN UP</button></a>
+                <a href="/login"><button class="first-button" id="log-in" value="LOG IN">LOG IN</button></a>
+            </div>
+            <div class="slide">
+                <h1 class="first-2" style="margin-top:175px;">THIS TIME<br>WE USE ACTION TO<br>PROVE OURSELVES</h1>
+                <hr style="width:190px;margin-left:130px;">
+                <h6 style="width:450px;text-align:left;margin-left:130px;line-height:20px;font-size:6px;">DREAM WHAT YOU WANT TO DREAM;GO WHERE YOU WANT TO GO;BE WHAT YOU WANT TO BE,BECAUSE YOU HAVE ONLY ONE LIFE AND ONE CHANCE TO DO ALL THE THINGS YOU WANT TO DO</h6>
+                <section class="playContainer">
+                    <li class="playBtn">
+                        <a href="#" title="start"></a>
+                    </li>
+                </section>
+                <div class="first-play">PLAY</div>
+            </div>
+            <div class="slide">
+                <h1 class="first-2" style="margin-top:250px;">LOVE AND FRIENDSHIP</h1>
+                <hr style="width:190px;margin-left:130px;">
+                <h6 style="width:450px;text-align:left;margin-left:130px;line-height:20px;font-size:6px;">LOVE IS A LAMP,WHILE FRIENDSHIP IS THE SHADOW.WHEN THE LAMP IS OFF,YOU WILL FIND THE SHADOW EVERYWHERE.FRIEND IS WHO CAN GIVE YOU STRENGTH AT LAST.</h6>
+                <section class="playContainer">
+                    <li class="playBtn">
+                        <a href="#" title="start"></a>
+                    </li>
+                </section>
+                <div class="first-play">PLAY</div>
+            </div>
+            <div class="slide">
+                <h1 class="first-2" style="margin-top:210px;">CEASE TO STRUGGLE<br>AND YOU CEASE TO LIVE</h1>
+                <hr style="width:190px;margin-left:130px;">
+                <h6 style="width:450px;text-align:left;margin-left:130px;line-height:20px;font-size:6px;">IF YOU WOULD GO UP HIGH,THEN USE YOUR OWN LEGS!DO NOT</h6>
+                <section class="playContainer">
+                    <li class="playBtn">
+                        <a href="#" title="start"></a>
+                    </li>
+                </section>
+                <div class="first-play">PLAY</div>
+            </div>
+            <div class="slide">
+                <h1 class="first-2" style="margin-top:250px;">LOVE AND FRIENDSHIP</h1>
+                <hr style="width:190px;margin-left:130px;">
+                <h6 style="width:450px;text-align:left;margin-left:130px;line-height:20px;font-size:6px;">LOVE IS A LAMP,WHILE FRIENDSHIP IS THE SHADOW.WHEN THE LAMP IS OFF,YOU WILL FIND THE SHADOW EVERYWHERE.FRIEND IS WHO CAN GIVE YOU STRENGTH AT LAST.</h6>
+                <section class="playContainer">
+                    <li class="playBtn">
+                        <a href="#" title="start"></a>
+                    </li>
+                </section>
+                <div class="first-play">PLAY</div>
+            </div>
+            <div class="slide">
+                <h1 class="first-2" style="margin-top:210px;">CEASE TO STRUGGLE<br>AND YOU CEASE TO LIVE</h1>
+                <hr style="width:190px;margin-left:130px;">
+                <h6 style="width:450px;text-align:left;margin-left:130px;line-height:20px;font-size:6px;">IF YOU WOULD GO UP HIGH,THEN USE YOUR OWN LEGS!DO NOT</h6>
+                <section class="playContainer">
+                    <li class="playBtn">
+                        <a href="#" title="start"></a>
+                    </li>
+                </section>
+                <div class="first-play">PLAY</div>
+            </div>
+        </div>
+        <script>
+            $(function(){
+                $.ajax({
+                    contentType: "application/json",
+                    type: "GET",
+                    url: "/index/info",
+                    dataType: "json",
+                    success:function(data){
+                        if(data.is_login == true){
+                            var url1 = data.headicon;
+                            alert(data.headicon);
+                            $("#head-icon img").attr("src",url1);
+                            $("#user-name").html(data.username);
+                            $("#head-icon").show();
+                            $("#user-name").show();
+                            $("#publish").show();
+                        }
+                    }
+                });
+            });
+        </script>
+</body>
+</html>

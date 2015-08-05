@@ -1,0 +1,77 @@
+html{
+    background-color: #0db;
+}
+input{
+    outline: none;
+}
+.first-top{
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background: rgba(0,0,0,0.1);
+    z-index: 1000;
+    padding-left: 230px;
+}
+.first-search{
+    width: 600px;
+    background: none;
+    margin-top: 10px;
+    float: left;
+}
+#three-nav{
+    line-height: 50px;
+    font-size: 15px;
+}
+.first-nav-img{
+    margin-left: 30px;
+    vertical-align: baseline;
+}
+.HOME{
+    margin-left: 150px;
+    color: #fff;
+}
+.CENTER{
+    margin-left: 30px;
+    color:#fff;
+}
+.LEHO{
+    float: left;
+    margin: 100px 0px 0px 150px;
+    font-size: 52px;
+    font-family: 黑体;
+    font-weight: 900;
+    color: #fff;
+}
+.want{
+    margin-top: 110px;
+    float: left;
+    color: #fff;
+}
+.describe{
+    float: left;
+    margin: 150px 0px 0px -205px;
+    width: 400px;
+    height: 100px;
+}
+.headportrait{
+    float: right;
+    margin: 100px 110px 0px 0px;
+    width: 300px;
+    height: 100px;
+}
+.content{
+    float: left;
+    width: 1140px;
+    margin: 100px;
+    height: auto;
+    padding: 20px;
+}
+.a{
+    margin-bottom: 20px;
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+}
+.a img{
+    max-width: 100%;
+}
